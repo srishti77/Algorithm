@@ -22,7 +22,7 @@ public class Day5_TwistyMaze {
 			try {
 				while((singleline = br.readLine()) != null) {
 					
-					arrayInput.add( Integer.parseInt(singleline));
+					arrayInput.add(Integer.parseInt(singleline));
 					System.out.print(Integer.parseInt(singleline)+ " ");
 					k++;
 				}

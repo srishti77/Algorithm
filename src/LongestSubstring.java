@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class LongestSubstring {
@@ -19,5 +20,10 @@ public class LongestSubstring {
             }
         }
         System.out.println(ans);
+        Iterator iterate = set.iterator();
+        
+        while(iterate.hasNext()) {
+        	System.out.println(iterate.next());
+        }
     }
 }
