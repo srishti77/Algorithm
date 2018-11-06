@@ -13,8 +13,7 @@ public class OnlineBSMain {
 		HandleOprations handle= new HandleOprations();
 		ReadersDB readerDB= new ReadersDB();
 		handle.loadBooks();
-		Scanner scan= new Scanner(System.in);
-		
+		Scanner scan= new Scanner(System.in);	
 		
 		String operation;
 		while(true) {
