@@ -4,22 +4,33 @@ import java.util.EmptyStackException;
 
 public class C3_GenericStack<T> {
 
-	private static class MyStack<T>{
-		private  T data;
-		private MyStack<T> next;
+	static class MyStack<T>{
+		public  T data;
+		public MyStack<T> next;
 		
 		public MyStack(T data){
 			this.data= data;
 		}
 	}
 	
-	private MyStack<T> top;
+	public MyStack<T> top;
+	public String data;
 	
 	public T pop() {
 		if(top==null) throw new EmptyStackException();
 		T item= top.data;
 		top=top.next;
 		return item;
+	}
+	
+	public int lengthCount() {
+		int count=0;
+		MyStack<T> node=top;
+		while(node!=null) {
+			count++;
+			node=node.next;
+		}
+		return count;
 	}
 	
 	public void push(T data) {

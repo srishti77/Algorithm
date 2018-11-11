@@ -63,6 +63,7 @@ public class C2_RemoveDups {
 }        
 
 class C2_Nodes{
+	
 	C2_Nodes next;
 	int data;
 	
