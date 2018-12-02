@@ -5,9 +5,6 @@ public class Bc4_STSequences {
 	int ways=0;
 	public static void main(String s[]) {
 		int array[] = {1,2,3,4,5,6,7};
-		//C4_BuildSmallestBST smallBST= new C4_BuildSmallestBST();
-		
-		//smallBST.buildTree(array);
 		
 		Bc4_STSequences tree = new Bc4_STSequences();
 		tree.insert(5);
@@ -57,6 +54,7 @@ public class Bc4_STSequences {
 		BSTree node = root;
 		print(node);
 	}
+	
 	public void print(BSTree root) {
 		if(root != null) {
 			System.out.println(root.data);
@@ -75,8 +73,7 @@ public class Bc4_STSequences {
 		if(root != null && root.data== value) {
 			System.out.println(root.data);
 			return root;
-			}
-		
+			}	
 		else if(root!=null){
 			root.left= getNode(root.left, value);
 			root.right= getNode(root.right,value);
@@ -91,8 +88,7 @@ public class Bc4_STSequences {
 		if(node==null) return 0;
 		if(node!= null && (node.left== null && node.right== null))
 			return 1;
-		System.out.println(node.data);
-		
+		System.out.println(node.data);	
 		//ways+=printWays(node.left) ;
 		//ways+=printWays(node.right);	
 			ways+=printWays(node.left) ;
