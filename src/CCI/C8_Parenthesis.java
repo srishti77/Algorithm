@@ -8,7 +8,7 @@ public class C8_Parenthesis {
 		HashSet<String> set= new HashSet<String>();
 		
 		C8_Parenthesis paren = new C8_Parenthesis();
-		set=paren.buildPrenthesis(3);
+		set=paren.buildPrenthesis(4);
 		
 		System.out.println(set);
 	}
