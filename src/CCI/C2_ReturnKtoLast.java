@@ -3,7 +3,7 @@ package CCI;
 public class C2_ReturnKtoLast {
 	
 	C2_KthNode head=null;
-	
+	int index =0;
 	public static void main(String s[]) {
 		
 		C2_ReturnKtoLast returnKthLast = new C2_ReturnKtoLast();
@@ -16,7 +16,7 @@ public class C2_ReturnKtoLast {
 		returnKthLast.insert(50);
 		returnKthLast.insert(60);
 		
-		returnKthLast.printLasttokElement(returnKthLast.head,returnKthLast.head);
+		returnKthLast.printLasttokElement(returnKthLast.head,returnKthLast.head,2);
 		
 		//System.out.println(returnKthLast.iterativelyPrintLastKthElement(2).data);
 	}
@@ -35,17 +35,19 @@ public class C2_ReturnKtoLast {
 		}
 	}
 	
-	public int printLasttokElement(C2_KthNode node,C2_KthNode head ) {
+	public int printLasttokElement(C2_KthNode node,C2_KthNode head, int index1 ) {
 		
 		if(node == null)
 			return 0; 
 		
 		
-		int index= printLasttokElement(node.next, head)+1;
-	
-		//if(head!= null)
-		System.out.println("Head="+ head.data);
-		System.out.println("This is the node"+ node.data);
+		
+		index = printLasttokElement(node.next, head,2)+1;
+		if(index == index1) {
+			System.out.println(node.data);
+			return index;
+		}
+		System.out.println(index);
 		
 		return index;
 	}

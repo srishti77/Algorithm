@@ -14,7 +14,8 @@ public class SearchRange {
 			System.out.println(num[i]);
 	}
 	  public int[] searchRange(int[] nums, int target) {
-	         ArrayList<Integer> list = new  ArrayList<Integer>();
+	        
+		  ArrayList<Integer> list = new  ArrayList<Integer>();
 	        int[] number = {-1,-1};
 	           
 	        if(nums.length == 0)
@@ -30,7 +31,8 @@ public class SearchRange {
 	          	                
 	        }
 	        return number;
-	  }
+	        }
+	        
 	       list = searchTargetRange(nums, target, 0, nums.length, list);
 	        
 	        if(list.size() ==0)

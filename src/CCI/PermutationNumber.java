@@ -17,9 +17,8 @@ public class PermutationNumber {
 	
 	public void getPermutation(int[] number) {
 		
-		Set<Set<Integer>> list = new HashSet<Set<Integer>>();
-		
-		permute(new HashSet<Integer>(), number, list);	
+		Set<List<Integer>> list = new HashSet<List<Integer>>();	
+		permute(new ArrayList<Integer>(), number, list);	
 		System.out.println(list);
 		
 	}
@@ -30,24 +29,20 @@ public class PermutationNumber {
 			System.out.println(array);
 	}
 	
-	private void permute(Set<Integer> arrayList, int[] number, Set<Set<Integer>> list) {
+	private void permute(List<Integer> arrayList, int[] number, Set<List<Integer>> list) {
 		
-		if(number.length == 1) {
+		if(number.length == 1 && !arrayList.isEmpty()) {
 			
 			//arrayList.add(number[0]);
-			
 			list.add(arrayList);
-
-
-			return;
+			arrayList.clear();
+			return;		
 		}
-	
+		
 		for(int i=0; i< number.length; i++) {
 			
-			arrayList.add(number[i]);
-			
-			int[] newNumber = makeArray(number,i);
-			
+			arrayList.add(number[i]);			
+			int[] newNumber = makeArray(number,i);			
 			permute(arrayList, newNumber, list);
 	
 		}		
@@ -56,6 +51,7 @@ public class PermutationNumber {
 
 	public int[] makeArray(int[] numberArray , int index) {
 		// TODO Auto-generated method stub
+		
 		int[] newNumber = new int[numberArray.length-1];
 		int j=0, i=0;
 		while(j< numberArray.length-1 && i < numberArray.length) {
@@ -65,8 +61,7 @@ public class PermutationNumber {
 			}
 			i++;
 		}
-		return newNumber;
-		
+		return newNumber;		
 	}	
 	
 

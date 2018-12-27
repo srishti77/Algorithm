@@ -9,9 +9,9 @@ public class RemoveNthNode {
 		RemoveNthNode node = new RemoveNthNode();
 		node.insert(12);
 		node.insert(34);
-		//node.insert(43);
-		//node.insert(67);
-		//node.insert(90);
+		node.insert(43);
+		node.insert(67);
+		node.insert(90);
 		
 		//node.printNode();
 		ListNode_Nth temp = head;
@@ -44,6 +44,7 @@ public class RemoveNthNode {
 		j++;
 		delete(index, temp.next);
 		System.out.println("j::"+j);
+		System.out.println(i);
 		i++;
 		if(j== index) {
 			head = head.next;

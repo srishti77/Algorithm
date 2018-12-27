@@ -11,10 +11,9 @@ public class PartitionStringPalindrome {
 	
 	public void findPalindrome(String word,int start) {
 		
-		//Starting from 0 check the palindrome
 		if(start >= word.length())
 			return;
-		else{
+		else {
 			String wordToCheck = word.substring(start);
 			System.out.println(wordToCheck);
 			int i=0;
@@ -27,13 +26,11 @@ public class PartitionStringPalindrome {
 				count++;
 			findPalindrome(word, word.length()-i);
 			
-		}
-		
+		}		
 	}
 
 	private boolean checkPalindrome(String array) {
-		// TODO Auto-generated method stub	
-		//System.out.println("Array  "+array);
+		
 		if(array.length() == 1||array.length() ==0)
 			return true;
 		else

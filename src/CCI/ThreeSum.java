@@ -15,7 +15,7 @@ public class ThreeSum {
 	
 		Arrays.sort(nums);
 		int len = nums.length;
-		int target =1;
+		int target =5;
 		int diff = Integer.MAX_VALUE;
 		int closestSum =0;
 		

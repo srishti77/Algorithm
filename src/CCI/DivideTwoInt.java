@@ -4,7 +4,7 @@ public class DivideTwoInt {
 	
 	public static void main(String s[]) {
 		
-		System.out.println(divide(-2147483648, -1));
+		System.out.println(divide(-2147483648, -12));
 		
 	}
 	 public static int divide(int dividend, int divisor) {

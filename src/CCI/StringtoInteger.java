@@ -38,9 +38,9 @@ public class StringtoInteger {
             	BigInteger maxInt = new BigInteger(Integer.MAX_VALUE+"");
             	BigInteger minInt = new BigInteger(Integer.MIN_VALUE+"");
             	
-                if(bd.compareTo(maxInt) == 1) {
+           if(bd.compareTo(maxInt) == 1) {
 				ret =Integer.MAX_VALUE;
-                }
+            }
 		
 			else if(bd.compareTo(minInt) == -1)
 				ret = Integer.MIN_VALUE;

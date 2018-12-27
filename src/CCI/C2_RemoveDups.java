@@ -7,10 +7,11 @@ public class C2_RemoveDups {
 		
 		C2_RemoveDups removeDups= new C2_RemoveDups();
 		removeDups.insertNode(20);
+		removeDups.insertNode(20);
 		removeDups.insertNode(30);
 		removeDups.insertNode(50);
 		removeDups.insertNode(60);
-		removeDups.insertNode(20);
+		
 		removeDups.insertNode(75);
 		
 		removeDups.print();
@@ -48,7 +49,7 @@ public class C2_RemoveDups {
 	
 	public void removeDuplicates() {
 		C2_Nodes node1= head;
-		C2_Nodes node2= head.next;
+		C2_Nodes node2= head;
 		
 		while(node1!= null) {
 			while(node2.next!=null) {

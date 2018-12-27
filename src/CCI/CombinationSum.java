@@ -13,36 +13,43 @@ public class CombinationSum {
 	static Set<List<Integer>> sets = new HashSet<List<Integer>>();
 	public static void main(String s[]) {
 		
-		int[] numbers = {2,5,2,1,2};
-		int target = 5;
+		int[] numbers = {2,3,6,7};
+		int target = 7;
 		Arrays.sort(numbers);
 		CombinationSum sum = new CombinationSum();
-		List l =new ArrayList<Integer>();
+		Stack l =new Stack<Integer>();
 		combinationSum(numbers, target, l, 0);
 		 
-	    //System.out.println(convert(sets));
+	    System.out.println(convert(sets));
 	}
 	
-	public static List<List<Integer>> convert(Set<List<Integer>> sets) {
+	public static List<List<Integer>> convert(Set<List<Integer>> sets2) {
 		
-		return new ArrayList<List<Integer>>(sets);
+		List<List<Integer>> listOfList = new ArrayList<List<Integer>>();
+		for(List<Integer> st: sets2) {
+			List<Integer>  list = new ArrayList<Integer>(st);
+			listOfList.add(list);
+			
+		}
+		
+		return listOfList;
+		
 		
 	}
-	public static void combinationSum(int[] array, int target, List<Integer> stack, int i ){
+	public static void combinationSum(int[] array, int target, Stack stack, int i ){
 		
 		if(target ==0) {
-			List<Integer> stack1 = new ArrayList<Integer>();
-			stack1.addAll(stack);
-			sets.add(stack1);
-			System.out.println(stack1);
+			List newStack = new ArrayList(stack);
+			sets.add(newStack);
 			return;
 		}
 		if(target < 0)
 			return;
 		
-		while(i< array.length && target-array[i] >= 0) {			
-			stack.add(array[i]);
-			combinationSum(array, target-array[i], stack, i+1);			
+		while(i< array.length && target-array[i] >= 0) {	
+			
+			stack.push(array[i]);
+			combinationSum(array, target-array[i], stack, i);			
 			i++;
 			stack.remove(stack.size()-1);			
 		}

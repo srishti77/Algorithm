@@ -9,7 +9,7 @@ Reverse P[x+1 .. n].
 
 public class NextPermutation {
 	public static void main(String s[]) {
-		int num[] = {3,2,1};
+		int num[] = {4,2,5,3,1};
 		NextPermutation perMutation = new NextPermutation();
 		int position = perMutation.findLargestPosition(num);
 		

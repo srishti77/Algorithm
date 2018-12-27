@@ -6,7 +6,7 @@ public class RotatedSortedArray {
 		int nums[] = { 1, 3, 5 };
 		RotatedSortedArray arr = new RotatedSortedArray();
 
-		System.out.println(arr.search(nums, 2));
+		System.out.println(arr.search(nums, 5));
 	}
 
 	public int search(int[] nums, int target) {

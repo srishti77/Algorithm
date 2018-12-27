@@ -16,7 +16,7 @@ public class RomanInteger {
 		hashMap.put(1, hash1);
 		
 		HashMap<Integer, String> hash2= new HashMap<Integer, String>();
-		hash2.put(1, "x");	
+		hash2.put(1, "X");	
 		hash2.put(4, "XL");
 		hash2.put(5, "L");
 		hash2.put(9, "XC");

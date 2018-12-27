@@ -6,7 +6,7 @@ public class C8_Coins_Optimized {
 		
 		int denoms[]= {25,10,5,2};
 		
-		int ways= makeChange(1, denoms, 0);
+		int ways= makeChange(30, denoms, 0);
 		System.out.println(ways);
 	}
 
@@ -16,8 +16,10 @@ public class C8_Coins_Optimized {
 		int ways=0;
 		int denomsAmt= denoms[index];
 		
-		for(int i=0; i*denomsAmt<=amount; i++) {		
+		for(int i=0; i*denomsAmt <= amount; i++) {	
+			
 			int remainingAmt= amount-(i*denomsAmt);
+			System.out.println(i*denomsAmt);
 			ways+= makeChange(remainingAmt, denoms, index+1);
 		}
 		
