@@ -32,8 +32,7 @@ public class DijkrastraShortestPath {
 		}
 		
 		dist[i] = 0;
-		
-		
+				
 		for(int j=0; j<len-1; j++) {		
 			int minValue = minDistance(dist, visited);
 			visited[minValue] = true;

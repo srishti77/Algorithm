@@ -54,9 +54,20 @@ public class Queue<T> {
 		queue.insert(1);
 		queue.insert(5);
 		
+		/*queue.delete();
 		queue.delete();
-		queue.delete();
+		*/
+		queue.print();
 		
+		
+	}
+	
+	public void print() {
+		while(front!= null) {
+			System.out.println(front.data);
+			front = front.next;
+		}
+			
 	}
 	
 }
