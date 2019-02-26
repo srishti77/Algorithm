@@ -34,8 +34,7 @@ public class C2_PalindromeLLRecursive {
 			}
 			C2_DoublyLinkedList temp= new C2_DoublyLinkedList(data);
 			node.next= temp;
-			temp.prev= node;
-			
+			temp.prev= node;		
 		
 		}
 		

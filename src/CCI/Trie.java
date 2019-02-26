@@ -1,7 +1,9 @@
 package CCI;
 
 public class Trie {
+	
 	static TrieNode root;
+	
 	public static void main(String s[]) {
 		
 		root = new TrieNode();
@@ -32,6 +34,7 @@ public class Trie {
 	}
 	
 	public boolean search(String word) {
+		
 		int length = word.length();
 		TrieNode node = root;
 		
@@ -49,6 +52,7 @@ public class Trie {
 }
 
 class TrieNode{
+	
 	boolean isEnd;
 	TrieNode children[] = new TrieNode[26];
 	

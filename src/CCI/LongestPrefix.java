@@ -3,7 +3,7 @@ package CCI;
 public class LongestPrefix {
 
 	public static void main(String args[]) {
-		String[] strs = {};
+		String[] strs = {"aaaabcd", "aaaaaaaaaabs"};
 		System.out.println(longestCommonPrefix(strs));
 		
 		}

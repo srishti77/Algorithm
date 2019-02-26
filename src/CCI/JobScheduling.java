@@ -43,7 +43,7 @@ public class JobScheduling {
  		print(list);
  		
  		for(int i=0; i<n; i++) {
- 			for(int j=Math.min(n, list.get(i).deadline)-1; j>=0; j--){
+ 			for(int j = Math.min(n, list.get(i).deadline)-1; j>=0; j--){
  				if(!bool[j]) {
  					System.out.println("J is"+j);
  					result[j] = list.get(i).id;

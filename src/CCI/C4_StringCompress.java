@@ -4,6 +4,7 @@ public class C4_StringCompress {
 
 	String word="aaabbcddfeeee";
 	StringBuilder compressedString= new StringBuilder();
+	
 	public static void main(String s[]) {
 		C4_StringCompress comp= new C4_StringCompress();
 		comp.compress();

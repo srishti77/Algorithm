@@ -9,6 +9,7 @@ public class C8_PermutationString {
 		String word = "Sriht";
 		C8_PermutationString str = new C8_PermutationString();
 		ArrayList<String> strArray = str.getPerms(word);
+		System.out.println(strArray);
 	}
 	
 	public ArrayList<String> getPerms(String str){
@@ -22,10 +23,10 @@ public class C8_PermutationString {
 		
 		char first = str.charAt(0);
 		ArrayList<String> words = getPerms(str.substring(1));
-		System.out.println(first+" "+words);
+		//System.out.println(first+" "+words);
 		for(String word: words) {
 			for(int i=0; i<=word.length(); i++) {
-				System.out.println(i);
+			
 				String s= insertCharAt(word, first, i);
 				permutation.add(s);
 			}

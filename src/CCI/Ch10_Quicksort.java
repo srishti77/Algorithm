@@ -22,6 +22,7 @@ public class Ch10_Quicksort {
 		}
 		
 	}
+	
 	public int partition(int array[], int low, int high) {
 		int i = low-1;
 		int pivot= array[high];

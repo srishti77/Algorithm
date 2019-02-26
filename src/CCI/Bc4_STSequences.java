@@ -57,6 +57,8 @@ public class Bc4_STSequences {
 	
 	public void print(BSTree root) {
 		if(root != null) {
+			
+			
 			System.out.println(root.data);
 			print(root.left);
 			print(root.right);
@@ -71,7 +73,7 @@ public class Bc4_STSequences {
 //			return null;
 //		System.out.println("current: "+root.data);
 		if(root != null && root.data== value) {
-			System.out.println(root.data);
+			//System.out.println(root.data);
 			return root;
 			}	
 		else if(root!=null){
@@ -88,7 +90,7 @@ public class Bc4_STSequences {
 		if(node==null) return 0;
 		if(node!= null && (node.left== null && node.right== null))
 			return 1;
-		System.out.println(node.data);	
+		//System.out.println(node.data);	
 		//ways+=printWays(node.left) ;
 		//ways+=printWays(node.right);	
 			ways+=printWays(node.left) ;

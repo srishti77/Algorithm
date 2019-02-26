@@ -14,8 +14,11 @@ public class C10_SortAnagrams {
 	}
 	
 	public static void sortAnagrams(String[] array) {
+		
 		HashMap<Integer, ArrayList<String>> map= new HashMap<Integer, ArrayList<String>>();
+		
 		for(int i=0; i< array.length; i++) {
+			
 			char[] words= array[i].toCharArray();
 			
 			Arrays.sort(words);

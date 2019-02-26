@@ -9,11 +9,13 @@ public class C8_EightQueens {
 		C8_EightQueens eight = new C8_EightQueens();
 		ArrayList<Integer[]> results = new ArrayList<Integer[]>();
 		Integer[] placeInteger = new Integer[8];
+		
 		for(Integer[] i: eight.placeQueens(0, placeInteger, results)) {
 			for(Integer integer: i)
 				System.out.print(integer);
 			System.out.println();
 		}
+		
 	}
 	
 	ArrayList<Integer[]> placeQueens(int row, Integer[] columns, ArrayList<Integer[]> results) {

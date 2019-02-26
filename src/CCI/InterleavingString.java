@@ -5,7 +5,7 @@ public class InterleavingString {
 	public static void main(String s[]) {
 		char s1[] = {'a', 'a','b','c','c'};
 		char[] s2= {'d','b','b','c','a'};	
-		char main[]= {'a','a','d','b','b','b','a','c','c','c'};
+		char main[]= {'a','a','d','b','b','c','a','b','c','c'};
 		
 		InterleavingString inter = new InterleavingString();
 		System.out.println(inter.checkInterveaning(s1, s2, main));

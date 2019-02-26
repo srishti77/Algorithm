@@ -10,9 +10,12 @@ public class C2_RemoveDups {
 		removeDups.insertNode(20);
 		removeDups.insertNode(30);
 		removeDups.insertNode(50);
+		removeDups.insertNode(50);
 		removeDups.insertNode(60);
 		
 		removeDups.insertNode(75);
+
+		removeDups.insertNode(30);
 		
 		removeDups.print();
 		
@@ -52,13 +55,15 @@ public class C2_RemoveDups {
 		C2_Nodes node2= head;
 		
 		while(node1!= null) {
-			while(node2.next!=null) {
+			node2 = node1;
+			while(node2!= null && node2.next!=null) {
 				if(node1.data == node2.next.data)
 					node2.next= node2.next.next;
 				node2=node2.next;
 			}
 			node1=node1.next;
 		}
+		
 		
 	}
 }        

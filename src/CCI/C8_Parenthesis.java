@@ -8,12 +8,12 @@ public class C8_Parenthesis {
 		HashSet<String> set= new HashSet<String>();
 		
 		C8_Parenthesis paren = new C8_Parenthesis();
-		set=paren.buildPrenthesis(4);
+		set=paren.buildPerenthesis(4);
 		
 		System.out.println(set);
 	}
 	
-	public HashSet<String> buildPrenthesis(int count) {
+	public HashSet<String> buildPerenthesis(int count) {
 		
 		HashSet<String> set = new HashSet<String>();
 		if(count ==0) {
@@ -21,8 +21,8 @@ public class C8_Parenthesis {
 			return set;
 		}
 		
-		HashSet<String> hashSet = buildPrenthesis(count-1);
-		//System.out.println(hashSet);
+		HashSet<String> hashSet = buildPerenthesis(count-1);
+		System.out.println("set"+hashSet);
 		for(String element: hashSet) {
 			set.addAll(addParenthesis(element));
 		}

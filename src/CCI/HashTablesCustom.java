@@ -109,13 +109,9 @@ public class HashTablesCustom<K,V> {
 		
 		if(prev!=null)
 			prev.next=head.next;
-		
-		
+	
 		else
 			bucketArray.set(index, head.next);
-		
-			
-		
 		return head.value;
 		
 	}
@@ -126,9 +122,7 @@ public class HashTablesCustom<K,V> {
 		
 		while(head!=null) {
 			if(head.key.equals(key)) {
-				return head.value;
-				
-			
+				return head.value;		
 			}
 			
 			head=head.next;

@@ -1,6 +1,7 @@
 package CCI;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CountBST {
 	int ways;
@@ -23,13 +24,14 @@ public class CountBST {
 		array.add(1);
 		array.add(2);
 		array.add(3);
+		array.add(4);
+		array.add(5);
 		Integer currentValue = 0;
 		BST root = null;
 		
 		CountBST bst = new CountBST();
-		System.out.println(bst.countUniqueBST(array, root, currentValue));
 		
-		System.out.println(bst.count);
+		System.out.println("My array: "+bst.countBSTs(array));
 		
 	}
 
@@ -50,6 +52,62 @@ public class CountBST {
 			
 		}
 		return ways;
+		
+	}
+	int way=0;
+	public int countBSTs(List<Integer> array) {
+		int size = array.size();
+
+		if(size == 0 || size == 1 || size == 2) {
+			System.out.println(size);
+			return size;
+		
+		}
+			if(size ==3)
+				return 5;
+		
+		for(int i=0; i< size; i++) {
+			
+			List<Integer> left = new ArrayList<Integer>();
+			List<Integer> right = new ArrayList<Integer>();
+			
+			for(int j=0; j<size; j++) {
+				
+				if(i != j) {
+					
+					if(array.get(i) < array.get(j)) {
+						right.add(array.get(j));
+					}
+					else if(array.get(i) > array.get(j)) {
+						left.add(array.get(j));
+					}
+					
+				}
+			}
+			System.out.println("Left Size:"+ left.size() +" -Right Size- "+ right.size());
+			int countLeft = countBSTs(left);
+			int countRight = countBSTs(right);
+			
+			if(countLeft !=0 && countRight !=0) {
+				//System.out.println(countLeft * countRight);
+				way += countLeft * countRight;
+			}
+			
+			else if(countLeft !=0 && countRight ==0  ) {
+				//System.out.println(countLeft);
+				way += countLeft;
+			}
+				
+			
+			else if( countLeft ==0 && countRight !=0 ) {
+				//System.out.println(countRight);
+				way += countRight;
+			}
+				
+			
+		}
+		
+		return way;
 		
 	}
 	

@@ -1,12 +1,12 @@
 package CCI;
 
-public class C2_ReturnKtoLast {
+public class ReturnKthLastElementLL {
 	
 	C2_KthNode head=null;
 	int index =0;
 	public static void main(String s[]) {
 		
-		C2_ReturnKtoLast returnKthLast = new C2_ReturnKtoLast();
+		ReturnKthLastElementLL returnKthLast = new ReturnKthLastElementLL();
 		returnKthLast.insert(10);
 		returnKthLast.insert(30);
 		
@@ -40,11 +40,9 @@ public class C2_ReturnKtoLast {
 		if(node == null)
 			return 0; 
 		
-		
-		
 		index = printLasttokElement(node.next, head,2)+1;
 		if(index == index1) {
-			System.out.println(node.data);
+			System.out.println("kth element: "+node.data);
 			return index;
 		}
 		System.out.println(index);

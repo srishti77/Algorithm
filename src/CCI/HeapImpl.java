@@ -44,9 +44,7 @@ public class HeapImpl {
 					int temp = arrayList.get(k);
 					arrayList.set(k, arrayList.get(max));
 					arrayList.set(max, temp);
-					k= max;
-					
-					
+					k= max;				
 				}
 				else {
 					break;

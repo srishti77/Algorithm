@@ -1,5 +1,9 @@
 package CCI;
 
+/*
+ * Can be calculated if the same string is added twice, checking for the index for a substring
+ * 
+ */
 public class C4_StringRotation {
 
 	String word1= "watererbottle";

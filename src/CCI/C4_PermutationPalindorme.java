@@ -12,12 +12,13 @@ public class C4_PermutationPalindorme {
 		C4_PermutationPalindorme pp= new C4_PermutationPalindorme();
 		pp.getCount();
 		pp.checkPalindrome();
+		pp.display();
 	}
 	
 	public void getCount() {
-		
+		int count=1;
 		for(int i=0; i<word.length(); i++) {
-			int count=1;
+			
 			if(map.get(word.charAt(i)+"")== null) {
 			for(int j=i+1; j<word.length(); j++) {
 				
@@ -27,7 +28,10 @@ public class C4_PermutationPalindorme {
 			}
 			map.put(word.charAt(i)+"", count);
 			}
+			
+			
 		}
+		System.out.println("count:"+count);
 	}
 	
 	public void display() {

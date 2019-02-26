@@ -21,11 +21,8 @@ public class C8_Coins_Optimized {
 			int remainingAmt= amount-(i*denomsAmt);
 			System.out.println(i*denomsAmt);
 			ways+= makeChange(remainingAmt, denoms, index+1);
-		}
-		
-		return ways;
-		
+			
+		}		
+		return ways;	
 	}
-	
-	
 }
