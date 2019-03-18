@@ -8,13 +8,13 @@ public class TrieTry {
 		
 		TrieTry trie = new TrieTry();
 		String word = "srishti";
-		Node root = new Node('z',true);
+		Node12 root = new Node12('z',true);
 		trie.insert(word, root, 0);
 		
 		trie.print(root);
 	}
 	
-	public void print(Node root) {
+	public void print(Node12 root) {
 		if(root != null)
 		{
 			System.out.println(root.character);
@@ -23,7 +23,7 @@ public class TrieTry {
 		}
 	}
 	
-	public void insert(String word, Node root, int index) {
+	public void insert(String word, Node12 root, int index) {
 		if(index == word.length())
 			return;
 		
@@ -33,7 +33,7 @@ public class TrieTry {
 			}		
 		}
 		root.lastNode =false;
-		Node node = new Node(word.charAt(index),true);
+		Node12 node = new Node12(word.charAt(index),true);
 		root.children.add(node);
 		insert(word, node, index+1);
 	
@@ -41,14 +41,16 @@ public class TrieTry {
 	}
 }
 
-class Node{
+class Node12{
 	char character;
-	ArrayList<Node> children;
+	ArrayList<Node12> children;
 	boolean lastNode;
 	
-	public Node(char character, boolean lastNode) {
+	public Node12(char character, boolean lastNode) {
 		this.character = character;
 		this.lastNode = lastNode;
-		children = new ArrayList<Node>();
+		children = new ArrayList<Node12>();
 	}
+
+	
 }

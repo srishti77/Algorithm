@@ -1,4 +1,4 @@
-
+package CCI;
 public class Thread1 implements Runnable {
 	
 	String name;

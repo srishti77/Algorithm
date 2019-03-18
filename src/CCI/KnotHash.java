@@ -1,4 +1,4 @@
-
+package CCI;
 public class KnotHash {
 
 	public static void main(String args[]) {

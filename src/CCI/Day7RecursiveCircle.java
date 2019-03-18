@@ -64,7 +64,7 @@ import java.util.ArrayList;
 }
 public class Day7RecursiveCircle {
 
-	static ArrayList<Node> arrayObject = new ArrayList<Node>();
+	static ArrayList<Node12> arrayObject = new ArrayList<Node12>();
 	static int ID = 1;
 	@SuppressWarnings("unlikely-arg-type")
 	public static void main(String args[]) {
@@ -88,7 +88,7 @@ public class Day7RecursiveCircle {
 						//System.out.println("Weight "+Weight);
 					if(!day7.isExist(CurrentLine)) {
 						
-						Node node = new Node(0,CurrentLine,ID, Weight );
+						Node12 node = new Node12(0,CurrentLine,ID, Weight );
 						arrayObject.add(node);
 					}
 					else {
@@ -132,7 +132,7 @@ public class Day7RecursiveCircle {
 						else {
 						
 							ParentId = ID;
-							Node parentnode = new Node(0, ParentString, ParentId, Weight);
+							Node12 parentnode = new Node12(0, ParentString, ParentId, Weight);
 							arrayObject.add(parentnode);
 							int i= 0;
 							ID++;
@@ -220,7 +220,7 @@ public class Day7RecursiveCircle {
 	
 	public void addChildrens(int ParentId, String childName, int id) {
 		
-		Node nodeChild = new Node(ParentId, childName, id, 0);
+		Node12 nodeChild = new Node12(ParentId, childName, id, 0);
 		arrayObject.add(nodeChild);
 	}
 	

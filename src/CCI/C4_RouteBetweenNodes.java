@@ -1,6 +1,6 @@
 package CCI;
 
-import CCI.Queue.Element;
+import CCI.Queue12.Element;
 
 public class C4_RouteBetweenNodes {
 	

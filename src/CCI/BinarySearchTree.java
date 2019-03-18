@@ -1,3 +1,4 @@
+package CCI;
 class BinaryTree{
 	
 	int value;

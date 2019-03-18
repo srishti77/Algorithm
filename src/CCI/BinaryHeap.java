@@ -1,4 +1,4 @@
-
+package CCI;
 public class BinaryHeap {
 
 	int size;

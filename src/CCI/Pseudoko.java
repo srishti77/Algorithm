@@ -1,4 +1,4 @@
-
+package CCI;
 public class Pseudoko {
 
 	public static void main(String s[]) {

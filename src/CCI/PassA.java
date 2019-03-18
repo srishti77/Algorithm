@@ -1,3 +1,4 @@
+package CCI;
 class PassA 
 {
     public static void main(String [] args) 

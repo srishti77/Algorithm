@@ -1,4 +1,4 @@
-
+package CCI;
 public class LongestSubStrPalindrome {
 
 	static String str= "ccccccccccccccccccccccccccccccccccccccccccccccc"

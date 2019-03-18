@@ -1,4 +1,4 @@
-
+package CCI;
 public class ZigZagStringSolve {
 
 	public static void main(String args[]) {

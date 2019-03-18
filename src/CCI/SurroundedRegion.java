@@ -1,4 +1,4 @@
-
+package CCI;
 public class SurroundedRegion {
 
 	public static void main(String s[]) {

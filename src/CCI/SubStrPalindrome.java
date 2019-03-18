@@ -1,4 +1,4 @@
-
+package CCI;
 public class SubStrPalindrome {
 	
 	public static void main(String args[]) {

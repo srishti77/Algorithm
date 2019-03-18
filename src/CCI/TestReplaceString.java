@@ -1,4 +1,4 @@
-
+package CCI;
 public class TestReplaceString {
 	public static void main(String args[]) {
 		

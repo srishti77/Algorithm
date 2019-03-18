@@ -1,4 +1,4 @@
-
+package CCI;
 public class TestResults {
 	 
 	    static int s;

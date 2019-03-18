@@ -1,4 +1,4 @@
-
+package CCI;
 public class InsideMethodBody {
 
 	public static void main(String args[]) {

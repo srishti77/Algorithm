@@ -1,3 +1,4 @@
+package CCI;
 import java.util.Arrays;
 
 public class TestSplit {

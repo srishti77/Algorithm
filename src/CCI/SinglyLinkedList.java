@@ -1,4 +1,4 @@
-
+package CCI;
 public class SinglyLinkedList {
 	
 	SLNode head=null;

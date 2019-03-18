@@ -1,3 +1,4 @@
+package CCI;
 import java.lang.*;
 public class UserInput {
     

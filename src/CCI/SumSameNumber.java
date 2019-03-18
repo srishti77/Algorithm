@@ -1,4 +1,4 @@
-
+package CCI;
 public class SumSameNumber {
 	
 	public static void main(String args[]) {

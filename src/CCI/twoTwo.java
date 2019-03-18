@@ -1,4 +1,4 @@
-
+package CCI;
 public class twoTwo {
 
 	public static void main(String s[]) {

@@ -1,7 +1,7 @@
 package CCI;
 
 public class OnesAndZeros {
-	static Queue queue = new Queue();
+	static Queue12 queue = new Queue12();
 	public static void main(String s[]) {
 		int array[] = {1,2,3,4};
 		OnesAndZeros onesAndZeros = new OnesAndZeros();

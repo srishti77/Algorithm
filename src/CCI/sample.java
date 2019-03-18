@@ -1,4 +1,4 @@
-
+package CCI;
 class a{
 	a getType() {
 		return this;

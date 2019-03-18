@@ -1,4 +1,4 @@
-
+package CCI;
 public class RepeatedStringMatch {
 	
 	public static void main(String s[]) {

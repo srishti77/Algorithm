@@ -1,4 +1,4 @@
-
+package CCI;
 public class ClosestSum {
 	public static void main(String s) {
 		

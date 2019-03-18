@@ -1,4 +1,4 @@
-
+package CCI;
 public class BitManipulation_Insert1 {
 	public static void main(String s[]) {
 		method2();

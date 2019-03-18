@@ -1,6 +1,6 @@
 package CCI;
 
-public class Queue<T> {
+public class Queue12<T> {
 	
 	Element front=null;
 	Element rear=null;
@@ -48,7 +48,7 @@ public class Queue<T> {
 	}
 	
 	public static void main(String s[]) {
-		Queue queue= new Queue();
+		Queue12 queue= new Queue12();
 		
 		queue.insert(4);
 		queue.insert(1);
