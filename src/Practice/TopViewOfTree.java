@@ -16,8 +16,6 @@ class BinaryTree{
 	BinaryTree(int val){
 		this.val = val;
 	}
-	
-	
 }
 
 public class TopViewOfTree {
@@ -36,11 +34,11 @@ public class TopViewOfTree {
 		root.left = node1;
 		root.right = node2;
 		
-		node1.right = node3;
+		node1.left = node3;	
+		node1.right = node4;
 		
-		node3.right = node4;
-	
-		node4.right = node5;
+		node2.left = node5;
+		node2.right = node6;
 		
 		TopViewOfTree topV = new TopViewOfTree();
 		//topV.topViewLeft(root.left);
@@ -69,18 +67,18 @@ public class TopViewOfTree {
 	        } else { 
 	            queue.add(new QueueObj( 0, root)); 
 	        }
+		   
 		while(!queue.isEmpty()) {
 			
 			QueueObj obj = queue.poll();
-			System.out.println(obj.node.val);
 			if(!map.containsKey(obj.hd)) {
 				map.put(obj.hd, obj.node);
 			}
 			if(obj.node.left != null) {
-				queue.add(new QueueObj(obj.hd-1, obj.node));
+				queue.add(new QueueObj(obj.hd-1, obj.node.left));
 			}
 			if(obj.node.right != null)
-				queue.add(new QueueObj(obj.hd+1, obj.node));
+				queue.add(new QueueObj(obj.hd+1, obj.node.right));
 		}
 		
 		for(Entry<Integer, BinaryTree> entry: map.entrySet()) {
