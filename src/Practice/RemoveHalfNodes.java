@@ -28,7 +28,6 @@ public class RemoveHalfNodes {
 		node4.left = node7;
 		node4.right = node8;
 		
-		
 		RemoveHalfNodes remove = new RemoveHalfNodes();
 		
 		BinaryTree node =  remove.removehalfNodes(root);
@@ -64,8 +63,7 @@ public class RemoveHalfNodes {
 		
 		node.left = removehalfNodes(node.left);
 		node.right = removehalfNodes(node.right);
-		
-		
+			
 		return node;
 		
 	}
