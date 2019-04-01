@@ -82,11 +82,9 @@ public class AVLTreeImpl {
 	AVLTree insert(AVLTree n, int key) {
 
 		if (n == null) {
-			// System.out.println("Current node: "+key);
 			return new AVLTree(key);
-
 		}
-
+		
 		if (key < n.key)
 			n.left = insert(n.left, key);
 
@@ -114,6 +112,7 @@ public class AVLTreeImpl {
 			n.right = rightRotate(n.right);
 			return leftRotate(n);
 		}
+		
 		return n;
 	}
 

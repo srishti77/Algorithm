@@ -17,8 +17,8 @@ public class InorderSuccessor {
 
 		InorderSuccessor inorderSuccessor = new InorderSuccessor();
 		TreeNode1 head = new TreeNode1(5);
-		TreeNode1 node1 = new TreeNode1(6);
-
+		TreeNode1 node1 = new TreeNode1(7);
+		TreeNode1 node2 = new TreeNode1(6);
 		/*
 		 * TreeNode1 node2 = new TreeNode1(2); TreeNode1 node3 = new TreeNode1(1);
 		 * 
@@ -26,6 +26,7 @@ public class InorderSuccessor {
 		 */
 
 		head.right = node1;
+		node1.left = node2;
 		/*
 		 * head.right = node5;
 		 * 
@@ -34,7 +35,7 @@ public class InorderSuccessor {
 		 * node2.left = node3;
 		 */
 
-		TreeNode1 node = inorderSuccessor.inorderSuccessor(head, node1);
+		TreeNode1 node = inorderSuccessor.inorderSuccessor(head, head);
 		System.out.println(node.val);
 
 	}

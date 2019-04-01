@@ -7,7 +7,9 @@ import java.util.Queue;
 public class Phone {
 
 	public static void main(String s[]) {
-
+		PhoneDirectory ph = new PhoneDirectory(3);
+		
+		
 	}
 }
 
