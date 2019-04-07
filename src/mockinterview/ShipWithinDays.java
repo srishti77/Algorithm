@@ -22,8 +22,6 @@ public class ShipWithinDays {
 		while (left < right) {
 
 			int mid = (left + right) / 2, need = 1, cur = 0;
-			System.out.println("Left: "+left+" right: "+right+" mid: "+mid);
-			
 			for(int w: weights) {
 				if(cur +w > mid) {
 					need +=1;
@@ -32,7 +30,7 @@ public class ShipWithinDays {
 				cur += w;
 				
 			}
-			System.out.println("D: "+need);
+			
 			if(need > D) left = mid+1;
 			else
 				right = mid;
